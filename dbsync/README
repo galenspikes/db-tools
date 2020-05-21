@@ -2,8 +2,6 @@
 
 This utility syncs or "refreshes" a target MySQL db from a source, and also does so with zero downtime. 
 
-Confluence: https://ncct-confluence.epa.gov/display/SYS/DBSync
-
 ## Usage
 
 ```bash

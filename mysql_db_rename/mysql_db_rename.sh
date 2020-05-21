@@ -11,7 +11,7 @@ password="$5"
 #######################################################################################################################################################################
 function usage() {
     echo ""
-    echo "usage: ./mysql_db_rename.sh --oldSchemaName oldSchemaName --newSchemaName newSchemaName --host au.epa.gov --user jdoe --password pass"
+    echo "usage: ./mysql_db_rename.sh --oldSchemaName oldSchemaName --newSchemaName newSchemaName --host localhost --user jdoe --password pass"
     echo "  --oldSchemaName
   			--newSchemaName
   			--host

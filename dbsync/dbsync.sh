@@ -88,7 +88,7 @@ mysql -v -h ${targetHost} -u ${APP_USER} --password="${APP_USER_PASSWORD}" -e "d
 echo "`date "+%D %T"`: Deleting temp files..."
 rm -vrf ${ROOT_PATH}/.data/${tmpdir}
 
-mysql -v -h ${sourceHost} -u ${APP_USER} --password="${APP_USER_PASSWORD}" -e "insert into application_logs(app_name, status, parameters, created_by) values ('dbsync', 'FINSIHED', 'sourceHost:${sourceHost}, targetHost:${targetHost}, sourceEnv:${sourceEnv}, targetEnv:${targetEnv}, databaseName:${databaseName}', '${APP_USER}')" epa_internal
-mysql -v -h ${targetHost} -u ${APP_USER} --password="${APP_USER_PASSWORD}" -e "insert into application_logs(app_name, status, parameters, created_by) values ('dbsync', 'FINSIHED', 'sourceHost:${sourceHost}, targetHost:${targetHost}, sourceEnv:${sourceEnv}, targetEnv:${targetEnv}, databaseName:${databaseName}', '${APP_USER}')" epa_internal
+mysql -v -h ${sourceHost} -u ${APP_USER} --password="${APP_USER_PASSWORD}" -e "insert into application_logs(app_name, status, parameters, created_by) values ('dbsync', 'FINSIHED', 'sourceHost:${sourceHost}, targetHost:${targetHost}, sourceEnv:${sourceEnv}, targetEnv:${targetEnv}, databaseName:${databaseName}', '${APP_USER}')" internal
+mysql -v -h ${targetHost} -u ${APP_USER} --password="${APP_USER_PASSWORD}" -e "insert into application_logs(app_name, status, parameters, created_by) values ('dbsync', 'FINSIHED', 'sourceHost:${sourceHost}, targetHost:${targetHost}, sourceEnv:${sourceEnv}, targetEnv:${targetEnv}, databaseName:${databaseName}', '${APP_USER}')" internal
 
 echo "`date "+%D %T"`: Done!"

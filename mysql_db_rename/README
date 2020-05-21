@@ -2,8 +2,6 @@
 
 Use this to quickly rename a MySQL database schema (and all its dependent objects)
 
-Confluence: https://ncct-confluence.epa.gov/display/SYS/Renaming+Schemas
-
 ## Usage
 
 ```bash
